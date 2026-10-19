@@ -28,5 +28,9 @@
     "brand:fine-print-mercantile",
     "design-generator",
     "svg"
-  ]
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/causeway-services/public-print-on-demand-services-section.git"
+  }
 }
