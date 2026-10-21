@@ -28,7 +28,7 @@ Pseudonymous shop identity for the print-on-demand gimmick lane. Not the founder
 | 11oz mug | $5.75 – $8.25 | **$15.99** | single-provider consistency preferred over cheapest-per-order |
 | Die-cut sticker | $1.20 – $2.80 | **$4.49** | best margin product; good upsell paired with a shirt |
 
-## Pricing — generated-art (illustrated) tier — live
+## Pricing — generated-art (illustrated) tier — recorded generation capability; commerce receiving outstanding
 
 Full-front illustrated art commands a premium over a plain text print across POD marketplaces (general market pattern, not independently measured for this shop yet). Poster base costs run higher than shirts (a 24x36in giclée print bases around $11 at Printify's cheapest provider; source: PodVector's 2026 Printify cost guide); a smaller 12x18/18x24 poster typical of a single-illustration print is priced here conservatively against that data point.
 
@@ -39,9 +39,9 @@ Full-front illustrated art commands a premium over a plain text print across POD
 | Die-cut sticker, illustrated art | $1.20 – $2.80 | **$5.49** | |
 | Poster (12x18/18x24), illustrated art | ~$8 – $12 (estimated against the 24x36 data point above; not yet verified at these exact sizes) | **$18.99** | new product type this tier unlocks — text-only designs are not sold as posters |
 
-This tier is **funded and live at $0 marginal cost**: image generation runs on Cloudflare Workers AI's free daily allocation (10,000 Neurons/day account-wide; `@cf/black-forest-labs/flux-1-schnell` costs ~4.80 Neurons per 512x512 tile — developers.cloudflare.com/workers-ai/platform/pricing, verified live 2026-08-31), served through a private, unlisted Worker this package deploys (`sites/pod-image-generation-worker`). The worker is the only default provider; allocation exhaustion is an explicit generation failure. Twelve designs (two per niche) already have real generated art on disk at `data/state/rendered-designs/<id>-art.png`, each with a `<id>-art.provenance.json` sidecar naming the exact provider/model.
+The source records an image-generation capability for this tier, not receipt of a buyer-facing merchandise offer. Its **2026-08-31 assumptions** were Cloudflare Workers AI's free daily allocation (10,000 Neurons/day account-wide), `@cf/black-forest-labs/flux-1-schnell` at ~4.80 Neurons per 512x512 tile (developers.cloudflare.com/workers-ai/platform/pricing), and a private, unlisted Worker at `sites/pod-image-generation-worker`. These dated provider, quota and cost statements are not a current availability or $0-cost guarantee. The recorded worker was the default provider and allocation exhaustion an explicit generation failure. The source retains twelve illustrated design candidates (two per niche) under `data/state/rendered-designs/<id>-art.png`, with `<id>-art.provenance.json` sidecars naming their provider/model; those artifacts do not establish accepted physical products, storefront publication or customer receipt. See `PRINCIPAL-RUNBOOK.md` for the current owner and outstanding product, provider and commerce receiving.
 
-Payout runs through Stripe inside the Pop-Up Store checkout: 2.9% + $0.30 per transaction. No separate marketplace listing fee in this channel (see channel-decision record for why Printify's own storefront beats Etsy/Redbubble/TeePublic here).
+The Printify Pop-Up Store/Stripe payout model (2.9% + $0.30 per transaction and no separate marketplace listing fee) is a historical channel assumption, not an observed checkout or payout. The current runbook identifies `shop.561.group` as the intended common customer destination; another channel requires its own approval. Current channel terms, costs, buyer-facing offer and fulfillment must be independently received before these assumptions are used commercially.
 
 ## Design corpus → listing copy
 
