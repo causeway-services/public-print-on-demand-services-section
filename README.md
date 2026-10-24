@@ -45,3 +45,7 @@ Five-custody thread (org-layering.md, 2026-09-01):
   `charge: {support, refutation}` axis this receipt shape has no natural
   mapping for yet (a run's per-attempt outcomes are provenance, not
   evidenced claims) — filed as a debt rather than forced.
+
+---
+
+Executable code of this section (`apps/, scripts/, src/, test/`) lives in [red-cup-engineering/public-print-on-demand-services-section](https://github.com/red-cup-engineering/public-print-on-demand-services-section) at the same relative paths; run it with `SECTION_ROOT` pointing at this checkout.
