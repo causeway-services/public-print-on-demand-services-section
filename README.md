@@ -7,7 +7,7 @@
 [![Tips welcome](https://img.shields.io/badge/tips-welcome-d4a017)](https://github.com/561-group/.github/blob/main/TIPS.md)
 <!-- 561-group-standards:badges:end -->
 
-`@red-cup-engineering/print-on-demand-engineering-services-section` generates print-ready
+`@red-cup-engineering/public-print-on-demand-services-section` generates print-ready
 designs and their listing copy (title, description, tags, product targets)
 as code for the Fine Print Mercantile print-on-demand shop. Two lanes:
 zero-cost typographic SVG rendering (`src/design-factory.mjs`), and a real
@@ -40,7 +40,7 @@ Five-custody thread (org-layering.md, 2026-09-01):
 
 - `scripts/generate-set-of-image-art.mjs` hand-writes dated run receipts
   (`writeImageGenerationReceipt`) straight to `data/records/` instead of
-  going through `@red-cup-engineering/semiotic-eavt-engineering-services-section`.
+  going through `@red-cup-engineering/semiotic-eavt-services-section`.
   Not a cheap rewire: the journal's `record()` requires a SEAVT
   `charge: {support, refutation}` axis this receipt shape has no natural
   mapping for yet (a run's per-attempt outcomes are provenance, not
